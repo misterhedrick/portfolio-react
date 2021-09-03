@@ -5,6 +5,7 @@ import { apiEndpoint } from "./prismic-configuration";
 import { Help, Preview, NotFound } from "./pages";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
+import Footer from "./components/footer/Footer";
 
 /**
  * Main application componenet
@@ -32,6 +33,7 @@ const App = (props) => {
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
+      <Footer></Footer>
     </Fragment>
   );
 };
